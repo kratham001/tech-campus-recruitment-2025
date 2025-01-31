@@ -2,7 +2,7 @@ import sys
 import os
 
 def extract_logs(log_file, target_date):
-    output_dir = "output"
+    output_dir = "../output"
     os.makedirs(output_dir, exist_ok=True)
     
     output_file = f"{output_dir}/output_{target_date}.txt"
