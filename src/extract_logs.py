@@ -9,7 +9,7 @@ def extract_logs(log_file, target_date):
 
     with open(log_file, 'r', encoding='utf-8') as infile, open(output_file, 'w', encoding='utf-8') as outfile:
         for line in infile:
-            if line.startswith(target_date):  # Match the required date
+            if line.startswith(target_date):
                 outfile.write(line)
     
     print(f"Logs for {target_date} saved in {output_file}")
